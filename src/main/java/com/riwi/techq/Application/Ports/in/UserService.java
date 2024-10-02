@@ -1,4 +1,4 @@
-package main.java.Application.Ports.in;
+package com.riwi.techq.Application.Ports.in;
 
 public class UserService {
 }

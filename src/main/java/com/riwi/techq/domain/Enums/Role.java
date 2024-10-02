@@ -1,4 +1,4 @@
-package main.java.domain.Enums;
+package com.riwi.techq.domain.Enums;
 
 public enum Role {
     ADMIN,

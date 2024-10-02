@@ -1,4 +1,4 @@
-package main.java.Application.Services;
+package com.riwi.techq.Application.Services;
 
 public class UserServiceImpl {
 }

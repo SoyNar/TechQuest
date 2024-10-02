@@ -1,8 +1,9 @@
 package com.riwi.techq.domain.Model;
 
 
+import com.riwi.techq.domain.Enums.Role;
 import jakarta.persistence.*;
-import main.java.domain.Enums.Role;
+
 
 import java.util.List;
 

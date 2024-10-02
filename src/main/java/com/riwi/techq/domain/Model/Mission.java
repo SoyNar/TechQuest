@@ -28,6 +28,8 @@ public class Mission {
             inverseJoinColumns = @JoinColumn(name = "user_id")
     )
     private List<User> userMission;
+
+
     @ManyToMany
     @JoinTable(
             name = "mission_skills",

@@ -1,4 +1,4 @@
-package com.riwi.techq.Infrastructure.Security;
+package com.riwi.techq.Infrastructure.Security.Filter;
 
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;
@@ -11,7 +11,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.function.Function;
 
-import static com.riwi.techq.Infrastructure.Security.TokenJwtConfig.*;
+import static com.riwi.techq.Infrastructure.Security.Filter.TokenJwtConfig.*;
 
 @Component
 public class JwtUtils {

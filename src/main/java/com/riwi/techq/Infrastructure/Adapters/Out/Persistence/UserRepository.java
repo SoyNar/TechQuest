@@ -1,4 +1,11 @@
-package main.java.Infrastructure.Adapters.Out.Persistence;
+package com.riwi.techq.Infrastructure.Adapters.Out.Persistence;
 
-public interface UserRepository {
+import com.riwi.techq.domain.Model.User;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import java.util.Optional;
+
+public interface UserRepository extends JpaRepository<User,Long> {
+    Optional<User> findByEmail (String email);
+    Optional<User> findById(Long id);
 }

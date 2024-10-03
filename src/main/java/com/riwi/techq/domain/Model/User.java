@@ -1,12 +1,14 @@
 package com.riwi.techq.domain.Model;
-
-
 import com.riwi.techq.domain.Enums.Role;
 import jakarta.persistence.*;
-
+import lombok.*;
+import org.springframework.data.annotation.CreatedBy;
+import org.springframework.data.annotation.LastModifiedBy;
 
 import java.util.List;
-
+@Getter
+@Setter
+@AllArgsConstructor
 @Entity
 @Table(name = "users")
 public class User {
@@ -19,8 +21,6 @@ public class User {
 
     @Column(nullable = false)
     private String email;
-
-
 
     @Column(nullable = false)
     private String password;
@@ -35,5 +35,11 @@ public class User {
             inverseJoinColumns = @JoinColumn(name = "skill_id")
     )
     private List<Skills> userSkill;
+
+    @CreatedBy
+    private String createdBy;
+
+    @LastModifiedBy
+    private String modifiedBy;
 
 }

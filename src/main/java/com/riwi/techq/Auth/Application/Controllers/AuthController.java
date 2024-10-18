@@ -1,9 +1,10 @@
-package com.riwi.techquesproject.Auth.Application.Controllers;
+package com.riwi.techq.Auth.Application.Controllers;
 
-import com.riwi.techquesproject.Auth.Application.Dtos.StudentResponseDto;
-import com.riwi.techquesproject.Auth.Application.Dtos.UserRequestDto;
-import com.riwi.techquesproject.Auth.Application.Dtos.UserResponseDto;
-import com.riwi.techquesproject.Auth.Application.Service.IUserService;
+
+import com.riwi.techq.Auth.Application.Dtos.StudentResponseDto;
+import com.riwi.techq.Auth.Application.Dtos.UserRequestDto;
+import com.riwi.techq.Auth.Application.Dtos.UserResponseDto;
+import com.riwi.techq.Auth.Application.Service.IUserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

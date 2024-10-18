@@ -1,11 +1,11 @@
-package com.riwi.techquesproject.Skills.Application.ServiceImpl;
+package com.riwi.techq.Skills.Application.ServiceImpl;
 
-import com.riwi.techquesproject.Skills.Application.Dtos.Response.SkillResponseDto;
-import com.riwi.techquesproject.Skills.Application.Dtos.Resquest.SkillRequestDto;
-import com.riwi.techquesproject.Skills.Application.IService.ISkillService;
-import com.riwi.techquesproject.Skills.Application.Mapper.SkillMapper;
-import com.riwi.techquesproject.Skills.Domain.Skills;
-import com.riwi.techquesproject.Skills.Infrastructure.ISkillRepository;
+import com.riwi.techq.Skills.Application.Dtos.Response.SkillResponseDto;
+import com.riwi.techq.Skills.Application.Dtos.Resquest.SkillRequestDto;
+import com.riwi.techq.Skills.Application.IService.ISkillService;
+import com.riwi.techq.Skills.Application.Mapper.SkillMapper;
+import com.riwi.techq.Skills.Domain.Skills;
+import com.riwi.techq.Skills.Infrastructure.ISkillRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

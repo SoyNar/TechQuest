@@ -1,4 +1,4 @@
-package com.riwi.techquesproject.Auth.Application.Dtos;
+package com.riwi.techq.Auth.Application.Dtos;
 
 import jakarta.validation.constraints.NotBlank;
 import lombok.*;

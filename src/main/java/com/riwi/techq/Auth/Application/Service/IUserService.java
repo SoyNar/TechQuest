@@ -1,9 +1,10 @@
-package com.riwi.techquesproject.Auth.Application.Service;
+package com.riwi.techq.Auth.Application.Service;
 
-import com.riwi.techquesproject.Auth.Application.Dtos.StudentResponseDto;
-import com.riwi.techquesproject.Auth.Application.Dtos.UserRequestDto;
-import com.riwi.techquesproject.Auth.Application.Dtos.UserResponseDto;
-import com.riwi.techquesproject.Skills.Domain.Skills;
+
+
+import com.riwi.techq.Auth.Application.Dtos.StudentResponseDto;
+import com.riwi.techq.Auth.Application.Dtos.UserRequestDto;
+import com.riwi.techq.Auth.Application.Dtos.UserResponseDto;
 
 import java.util.List;
 

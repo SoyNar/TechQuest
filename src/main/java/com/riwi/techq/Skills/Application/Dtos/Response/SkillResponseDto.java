@@ -1,8 +1,6 @@
-package com.riwi.techquesproject.Skills.Application.Dtos.Response;
+package com.riwi.techq.Skills.Application.Dtos.Response;
 
-import com.riwi.techquesproject.Skills.Domain.SkillType;
-import jakarta.validation.constraints.NotBlank;
-import jakarta.validation.constraints.NotNull;
+import com.riwi.techq.Skills.Domain.SkillType;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;

@@ -1,4 +1,4 @@
-package com.riwi.techquesproject.Auth.Domain;
+package com.riwi.techq.Auth.Domain;
 
 public enum Role {
     ADMIN,

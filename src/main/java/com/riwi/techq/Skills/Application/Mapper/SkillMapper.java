@@ -1,13 +1,9 @@
-package com.riwi.techquesproject.Skills.Application.Mapper;
+package com.riwi.techq.Skills.Application.Mapper;
 
-import com.riwi.techquesproject.Auth.Application.Dtos.UserRequestDto;
-import com.riwi.techquesproject.Auth.Application.Dtos.UserResponseDto;
-import com.riwi.techquesproject.Auth.Domain.User;
-import com.riwi.techquesproject.Skills.Application.Dtos.Response.SkillResponseDto;
-import com.riwi.techquesproject.Skills.Application.Dtos.Resquest.SkillRequestDto;
-import com.riwi.techquesproject.Skills.Domain.Skills;
+import com.riwi.techq.Skills.Application.Dtos.Response.SkillResponseDto;
+import com.riwi.techq.Skills.Application.Dtos.Resquest.SkillRequestDto;
+import com.riwi.techq.Skills.Domain.Skills;
 import org.mapstruct.Mapper;
-import org.mapstruct.Mapping;
 import org.mapstruct.factory.Mappers;
 
 @Mapper

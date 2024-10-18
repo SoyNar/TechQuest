@@ -1,6 +1,6 @@
-package com.riwi.techquesproject.Auth.Domain;
+package com.riwi.techq.Auth.Domain;
 
-import com.riwi.techquesproject.Skills.Domain.Skills;
+import com.riwi.techq.Skills.Domain.Skills;
 import jakarta.persistence.*;
 import lombok.*;
 import org.springframework.data.annotation.CreatedBy;

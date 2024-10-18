@@ -1,16 +1,17 @@
-package com.riwi.techquesproject.Auth.Application.ServiceImpl;
+package com.riwi.techq.Auth.Application.ServiceImpl;
 
-import com.riwi.techquesproject.Auth.Application.Dtos.StudentResponseDto;
-import com.riwi.techquesproject.Auth.Application.Dtos.UserRequestDto;
-import com.riwi.techquesproject.Auth.Application.Dtos.UserResponseDto;
-import com.riwi.techquesproject.Auth.Application.Mapper.StudentMapper;
-import com.riwi.techquesproject.Auth.Application.Mapper.UserMapper;
-import com.riwi.techquesproject.Auth.Application.Service.IUserService;
-import com.riwi.techquesproject.Auth.Domain.Role;
-import com.riwi.techquesproject.Auth.Domain.User;
-import com.riwi.techquesproject.Auth.infrastructure.Persistence.IUserRepository;
-import com.riwi.techquesproject.Skills.Domain.Skills;
-import com.riwi.techquesproject.Skills.Infrastructure.ISkillRepository;
+
+import com.riwi.techq.Auth.Application.Dtos.StudentResponseDto;
+import com.riwi.techq.Auth.Application.Dtos.UserRequestDto;
+import com.riwi.techq.Auth.Application.Dtos.UserResponseDto;
+import com.riwi.techq.Auth.Application.Mapper.StudentMapper;
+import com.riwi.techq.Auth.Application.Mapper.UserMapper;
+import com.riwi.techq.Auth.Application.Service.IUserService;
+import com.riwi.techq.Auth.Domain.Role;
+import com.riwi.techq.Auth.Domain.User;
+import com.riwi.techq.Auth.infrastructure.Persistence.IUserRepository;
+import com.riwi.techq.Skills.Domain.Skills;
+import com.riwi.techq.Skills.Infrastructure.ISkillRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

@@ -1,8 +1,9 @@
-package com.riwi.techquesproject.Auth.Application.Mapper;
+package com.riwi.techq.Auth.Application.Mapper;
 
-import com.riwi.techquesproject.Auth.Application.Dtos.UserRequestDto;
-import com.riwi.techquesproject.Auth.Application.Dtos.UserResponseDto;
-import com.riwi.techquesproject.Auth.Domain.User;
+
+import com.riwi.techq.Auth.Application.Dtos.UserRequestDto;
+import com.riwi.techq.Auth.Application.Dtos.UserResponseDto;
+import com.riwi.techq.Auth.Domain.User;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 import org.mapstruct.factory.Mappers;

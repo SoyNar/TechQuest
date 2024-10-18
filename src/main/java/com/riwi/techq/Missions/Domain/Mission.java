@@ -1,7 +1,7 @@
-package com.riwi.techquesproject.Missions.Domain;
+package com.riwi.techq.Missions.Domain;
 
-import com.riwi.techquesproject.Auth.Domain.User;
-import com.riwi.techquesproject.Skills.Domain.Skills;
+import com.riwi.techq.Auth.Domain.User;
+import com.riwi.techq.Skills.Domain.Skills;
 import jakarta.persistence.*;
 
 import java.util.List;

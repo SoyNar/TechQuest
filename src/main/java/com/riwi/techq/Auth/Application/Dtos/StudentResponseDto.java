@@ -1,4 +1,4 @@
-package com.riwi.techquesproject.Auth.Application.Dtos;
+package com.riwi.techq.Auth.Application.Dtos;
 
 public class StudentResponseDto {
 }

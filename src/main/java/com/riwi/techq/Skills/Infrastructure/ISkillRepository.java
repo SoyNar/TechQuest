@@ -1,6 +1,6 @@
-package com.riwi.techquesproject.Skills.Infrastructure;
+package com.riwi.techq.Skills.Infrastructure;
 
-import com.riwi.techquesproject.Skills.Domain.Skills;
+import com.riwi.techq.Skills.Domain.Skills;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.List;

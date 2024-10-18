@@ -1,4 +1,4 @@
-package com.riwi.techquesproject.Skills.Domain;
+package com.riwi.techq.Skills.Domain;
 
 import jakarta.persistence.*;
 

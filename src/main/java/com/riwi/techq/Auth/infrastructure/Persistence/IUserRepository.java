@@ -1,7 +1,8 @@
-package com.riwi.techquesproject.Auth.infrastructure.Persistence;
+package com.riwi.techq.Auth.infrastructure.Persistence;
 
-import com.riwi.techquesproject.Auth.Domain.Role;
-import com.riwi.techquesproject.Auth.Domain.User;
+
+import com.riwi.techq.Auth.Domain.Role;
+import com.riwi.techq.Auth.Domain.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.List;

@@ -1,4 +1,4 @@
-package com.riwi.techquesproject.Missions.Domain;
+package com.riwi.techq.Missions.Domain;
 
 public enum DifficultyLevel {
     EASY,

@@ -10,6 +10,8 @@ import org.springframework.security.config.annotation.authentication.configurati
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.http.SessionCreationPolicy;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.SecurityFilterChain;
 
 @EnableWebSecurity
@@ -27,12 +29,18 @@ public class SpringSecurityConfig  {
     }
 
     @Bean
+    public PasswordEncoder passwordEncoder() {
+        return new BCryptPasswordEncoder();
+    }
+
+
+
+    @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
         return http.authorizeHttpRequests((authz) -> authz
 
                         .requestMatchers(HttpMethod.POST,"/auth/**").permitAll()
                         .anyRequest().authenticated())
-                .formLogin(Customizer.withDefaults())
                 .csrf(config -> config.disable())//token para evitar vulnerabildiad
                 .sessionManagement(manag ->
                         manag // para que la sesion no tenga estado y todo se maneje desde el token

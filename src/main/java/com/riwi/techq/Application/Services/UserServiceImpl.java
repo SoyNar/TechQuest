@@ -1,10 +1,13 @@
 package com.riwi.techq.Application.Services;
 
 import com.riwi.techq.Application.Ports.in.IUserService;
+import com.riwi.techq.Infrastructure.Adapters.In.Rest.Dto.UserRequestDto;
+import com.riwi.techq.Infrastructure.Adapters.In.Rest.Dto.UserResponseDto;
 import com.riwi.techq.Infrastructure.Adapters.Out.Persistence.UserRepository;
 import com.riwi.techq.domain.Excepcions.ResourceNotFoundException;
 import com.riwi.techq.domain.Model.User;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -15,9 +18,21 @@ public class UserServiceImpl implements IUserService {
     @Autowired
      private UserRepository userRepository;
 
+    @Autowired
+    private PasswordEncoder passwordEncoder;
+
+
     @Override
-    public User save(User user) {
-        return this.userRepository.save(user);
+    public UserResponseDto register(UserRequestDto userRequest) {
+        // buscamos usuario por username
+        if (userRepository.findByEmail(userRequest.getUsername()).isPresent()) {
+            throw new RuntimeException("Username already exists");
+        }
+        // encriptamos la password
+
+        String encodedPassword = passwordEncoder.encode(userRequest.getPassword());
+
+        return null;
     }
 
     @Override
@@ -25,10 +40,8 @@ public class UserServiceImpl implements IUserService {
         return this.userRepository.findAll();
     }
 
-    @Override
-    public User findByEmail(User user) {
-        return this.userRepository.findByEmail(user.getEmail());
-    }
+
+
 
     @Override
     public User findById(Long id) {

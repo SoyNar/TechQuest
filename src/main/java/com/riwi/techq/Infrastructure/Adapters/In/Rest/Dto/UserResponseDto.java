@@ -1,4 +1,4 @@
-package main.java.Infrastructure.Adapters.In.Rest.Dto;
+package com.riwi.techq.Infrastructure.Adapters.In.Rest.Dto;
 
 public class UserResponseDto {
 }

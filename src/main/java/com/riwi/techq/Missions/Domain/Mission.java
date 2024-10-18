@@ -3,9 +3,15 @@ package com.riwi.techq.Missions.Domain;
 import com.riwi.techq.Auth.Domain.User;
 import com.riwi.techq.Skills.Domain.Skills;
 import jakarta.persistence.*;
+import lombok.*;
 
 import java.util.List;
 
+@Builder
+@Getter
+@Setter
+@AllArgsConstructor
+@NoArgsConstructor
 @Entity
 @Table(name = "mission")
 public class Mission {

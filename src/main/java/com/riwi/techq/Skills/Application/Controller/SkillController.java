@@ -15,6 +15,7 @@ public class SkillController {
     @Autowired
     private ISkillService   skillService;
 
+    // crear una habilidad solo para admin y teacher
     @PostMapping("/create")
     public ResponseEntity<SkillResponseDto> createSkillOne( @RequestBody SkillRequestDto requestDto){
         SkillResponseDto responseDto = this.skillService.createSkill(requestDto);

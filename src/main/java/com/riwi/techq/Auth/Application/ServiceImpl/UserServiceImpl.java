@@ -73,7 +73,7 @@ public class UserServiceImpl implements IUserService {
         // devolver un user responser con mapper
         return userMapper.userToResponseUserDto(savedUser);
     }
-
+// cambiar estado de estudiante
     @Override
     public UserResponseDto updateUser(String username) {
         UserRequestDto userRequestDto = new UserRequestDto();

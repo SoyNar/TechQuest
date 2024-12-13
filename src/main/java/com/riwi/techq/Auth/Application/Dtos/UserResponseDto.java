@@ -1,15 +1,14 @@
 package com.riwi.techq.Auth.Application.Dtos;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
 @Getter
 @Setter
+@Builder
 @AllArgsConstructor
 @NoArgsConstructor
 public class UserResponseDto {
     private  String username;
-    private  String password;
+    private  String roleName;
+    private String fullname;
 }

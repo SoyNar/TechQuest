@@ -11,7 +11,7 @@ import org.mapstruct.factory.Mappers;
 public interface MissionMapper {
     MissionMapper INSTANCE = Mappers.getMapper(MissionMapper.class);
     // Mapear desde RequestUserDto a User (entrada)
-    MissionMapper requestMissionDtoToUser(MissionRequestDto missionRequestDto);
+//    MissionMapper requestMissionDtoToUser(MissionRequestDto missionRequestDto);
 
     //Mapear desde USer a ResponseStudentDto (salida)
 

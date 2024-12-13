@@ -7,7 +7,7 @@ import com.riwi.techq.Auth.Domain.User;
 import org.mapstruct.Mapper;
 import org.mapstruct.factory.Mappers;
 
-@Mapper
+@Mapper(componentModel = "spring")
 public interface StudentMapper {
 
     StudentMapper INSTANCE = Mappers.getMapper(StudentMapper.class);

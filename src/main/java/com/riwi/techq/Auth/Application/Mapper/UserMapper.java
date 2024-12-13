@@ -8,7 +8,7 @@ import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 import org.mapstruct.factory.Mappers;
 
-@Mapper
+@Mapper(componentModel = "spring")
 public interface UserMapper {
     UserMapper INSTANCE = Mappers.getMapper(UserMapper.class);
 
@@ -16,7 +16,7 @@ public interface UserMapper {
     User requestUserDtoToUser(UserRequestDto requestUserDto);
 
     //Mapear desde User a ResponseUserDto (salida)
-    @Mapping(target = "role", source = "role.name") // El rol se mapea como String
+//    @Mapping(target ="roleName", expression = "java(user.getRole().name())")// El rol se mapea como String
     UserResponseDto userToResponseUserDto(User user);
 
 }
